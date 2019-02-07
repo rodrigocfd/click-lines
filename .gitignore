@@ -1,0 +1,7 @@
+Debug/
+Release/
+.vs/
+*.aps
+*.ffs_db
+*.rar
+*.user
