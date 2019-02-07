@@ -13,9 +13,15 @@
     <ClCompile Include="src\MainWindow.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="src\DrawLines.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\MainWindow.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DrawLines.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
