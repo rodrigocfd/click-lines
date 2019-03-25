@@ -7,14 +7,14 @@ DrawLines::DrawLines()
 	setup.wndClassEx.lpszClassName = L"DRAW_LINES_CLASS_NAME";
 	setup.exStyle |= wl::wsx::CLIENTEDGE;
 
-	on_message(WM_LBUTTONDOWN, [&](wl::wm::lbuttondown p)->LRESULT
+	on_message(WM_LBUTTONDOWN, [&](wl::wm::lbuttondown p) -> LRESULT
 	{
 		dots.emplace_back(p.pos());
 		InvalidateRect(hwnd(), nullptr, TRUE);
 		return 0;
 	});
 
-	on_message(WM_PAINT, [&](wl::wm::paint p)->LRESULT
+	on_message(WM_PAINT, [&](wl::wm::paint p) -> LRESULT
 	{
 		wl::device_context_simple dc{this};
 		POINT prevDot{0, 0};
