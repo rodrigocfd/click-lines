@@ -16,7 +16,7 @@ DrawLines::DrawLines()
 
 	on_message(WM_PAINT, [&](wl::wm::paint p) -> LRESULT
 	{
-		wl::device_context_simple dc{this};
+		wl::gdi::dc_painter dc{this};
 		POINT prevDot{0, 0};
 
 		for (const POINT& dot : dots) {
