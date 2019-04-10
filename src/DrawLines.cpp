@@ -1,5 +1,5 @@
 
-#include "../winlamb/device_context.h"
+#include "../winlamb/gdi.h"
 #include "DrawLines.h"
 
 DrawLines::DrawLines()
