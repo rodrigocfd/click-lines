@@ -5,7 +5,7 @@
 DrawLines::DrawLines()
 {
 	setup.wndClassEx.lpszClassName = L"DRAW_LINES_CLASS_NAME";
-	setup.exStyle |= wl::wsx::CLIENTEDGE;
+	setup.exStyle |= WS_EX_CLIENTEDGE;
 
 	on_message(WM_LBUTTONDOWN, [&](wl::wm::lbuttondown p) -> LRESULT
 	{

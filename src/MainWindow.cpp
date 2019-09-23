@@ -7,7 +7,7 @@ MainWindow::MainWindow()
 {
 	setup.wndClassEx.lpszClassName = L"MAIN_WINDOW_CLASS_NAME";
 	setup.title = L"Click lines";
-	setup.style |= wl::ws::MINIMIZEBOX | wl::ws::MAXIMIZEBOX | wl::ws::SIZEBOX;
+	setup.style |= WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_SIZEBOX;
 	setup.size = {600, 400};
 
 	on_message(WM_CREATE, [&](wl::wm::create p) -> LRESULT
